@@ -18,3 +18,35 @@ class Solution(object):
 
         
         return numSA
+
+#================#================#================#================#================
+class Solution2(object):
+    def subarraySum(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+
+        currSum = 0 
+        prefix = {
+            0 : 1 
+        } 
+        
+        res = 0 
+        # O(n)
+        for i in range(len(nums)): 
+            currSum += nums[i] 
+
+            if currSum - k in prefix: 
+                res += prefix[currSum - k]
+            
+            prefix[currSum] = prefix.get(currSum, 0) + 1 
+
+
+        return res 
+        
+
+
+            
+
