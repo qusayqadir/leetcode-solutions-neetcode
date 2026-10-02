@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qusay Coding Problems Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>Qusay Coding Problems Dashboard</h1>
+    </div>
+    <div class="topbar-actions">
+      <button class="btn ghost" id="manageTagsBtn">Tags</button>
+      <button class="btn ghost" id="addSectionBtn">Add section</button>
+      <button class="btn primary" id="addProblemBtn">+ Add problem</button>
+    </div>
+  </header>
+
+  <div class="collection-bar">
+    <div class="seg-group" id="collectionTabs"><!-- rendered by app.js --></div>
+  </div>
+
+  <div class="toolbar">
+    <div class="search-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+        <path d="M11 4a7 7 0 1 0 4.2 12.6l4.1 4.1 1.4-1.4-4.1-4.1A7 7 0 0 0 11 4zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10z"/>
+      </svg>
+      <input type="search" id="search" placeholder="Search problems, topics, tags…" autocomplete="off" />
+    </div>
+    <div class="count-chip" id="countChip">0 solved</div>
+    <div class="view-toggle" role="tablist">
+      <button class="seg" data-view="recency">Recency</button>
+      <button class="seg active" data-view="topic">Topic</button>
+    </div>
+  </div>
+
+  <main id="content" class="content"><!-- rendered by app.js --></main>
+
+  <!-- Modal shell (reused) -->
+  <div class="modal-backdrop" id="modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <h2 id="modalTitle">Title</h2>
+        <button class="icon-btn" id="modalClose" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
