@@ -6,7 +6,42 @@
       "notes": "",
       "link": "",
       "date": null
+    },
+    "DSA/Autodesk OA Prep/easy/1480. Running Sum of 1d Array.py": {
+      "tags": [],
+      "notes": "",
+      "link": "",
+      "date": "2026-10-13"
+    },
+    "DSA/Autodesk OA Prep/easy/1413. Minimum Value to Get Positive Step by Step Sum.py": {
+      "tags": [],
+      "notes": "",
+      "link": "",
+      "date": "2026-10-13"
+    },
+    "DSA/Autodesk OA Prep/easy/3069. Distribute Elements Into Two Arrays I.py": {
+      "tags": [],
+      "notes": "",
+      "link": "",
+      "date": "2026-10-13"
+    },
+    "DSA/Autodesk OA Prep/easy/1528. Shuffle String.py": {
+      "tags": [],
+      "notes": "",
+      "link": "",
+      "date": "2026-10-14"
+    },
+    "DSA/Autodesk OA Prep/med/1910. Remove All Occurrences of a Substring.py": {
+      "tags": [],
+      "notes": "check a substring of a string for a certain length from the end : arrayName[MINUS length: ] \n\nalso consider using multi approach, before coding / implementation think of using 2 points, hashmap, stack, and etc. think about the data stuctures and algorithms that could be valid before jumping to implementation. ",
+      "link": "",
+      "date": "2026-10-14"
     }
   },
-  "topics": []
+  "topics": [
+    {
+      "collection": "DSA",
+      "name": "Autodesk OA Prep"
+    }
+  ]
 }
